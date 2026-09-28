@@ -23,7 +23,7 @@
       "keepouts": false,
       "lockedItems": true,
       "otherItems": false,
-      "pads": true,
+      "pads": false,
       "text": false,
       "tracks": false,
       "vias": false,
