@@ -1,3 +1,5 @@
+![Gateometry Header](assets/GATEOMETRY_header.png)
+
 # Gateometry
 
 Eight-channel Euclidean rhythm generator for a **classic Arduino Nano, ATmega328P,
@@ -193,14 +195,55 @@ This is a prototype interface suggestion, not a fully protected Eurorack output
 circuit: patching an output against an external voltage requires suitable
 additional protection, and modules requiring higher gates need another driver.
 
-**Do not connect a raw Eurorack clock jack directly to D4.** Use a protected
-input stage with a comparator/Schmitt trigger, appropriate attenuation/current
-limiting and clamps, and hysteresis. Its output must idle low and deliver clean
-non-inverted 0–5 V logic edges to D4 even if the jack sees negative voltage or
-higher positive Eurorack levels. A jack-to-ground pull-down defines the unplugged
-state at that stage's input. Choose and verify the threshold/protection network
-for the clock voltage range you intend to support; that analog front end is
-separate from this sketch.
+**Do not connect a raw Eurorack clock jack directly to D4.** A practical
+through-hole prototype input stage uses two gates of a **74HCT14 Schmitt-trigger
+inverter**, powered from +5 V, and two **Vishay BAT85S Schottky clamp diodes**:
+
+```text
+clock jack tip ----+---- 22k ----+---- 74HCT14 ---- 74HCT14 ---- Nano D4
+                  |            |      gate 1      gate 2
+                 100k          +---- upper clamp to +5 V
+                  |            +---- lower clamp to GND
+                 GND
+
+jack sleeve ------------------------------------------------ common GND
+```
+
+Connect both clamps at the protected node **after the 22 kΩ resistor**, close
+to the first gate's input:
+
+| Clamp diode | Anode | Cathode (banded end) |
+| --- | --- | --- |
+| Upper BAT85S | Protected input node | +5 V |
+| Lower BAT85S | GND | Protected input node |
+
+The 100 kΩ jack-to-ground pull-down defines the unplugged state. The 22 kΩ
+series resistor limits current when an input goes below ground or above +5 V;
+the diodes clamp the protected node near those rails. With approximately 0.3 V
+diode drops, a +12 V input produces about 0.30 mA through the upper clamp, and
+a −12 V input produces about 0.53 mA through the lower clamp.
+
+The first gate's hysteresis cleans up slow or noisy transitions. The second
+gate restores polarity, giving D4 clean, non-inverted 0–5 V logic that idles
+low when unplugged. This matters because Clock Out follows both input edges.
+The **74HCT14** has lower, TTL-compatible input thresholds than the 74HC14,
+giving more margin for 3.3 V clocks while accepting 5 V clocks through the same
+network. See the [74HC14/74HCT14 datasheet](https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf).
+Place a **100 nF bypass capacitor** directly between the IC's supply pins;
+tie unused gate inputs to ground and leave unused outputs unconnected.
+
+The [Vishay BAT85S](https://www.vishay.com/docs/85513/bat85s.pdf) is an axial
+**DO-35 through-hole** diode despite its “S” suffix; **BAT85S-TAP** is one
+ordering code. It is rated for 30 V reverse voltage and 200 mA forward current,
+with a maximum forward drop of 0.32 V at 1 mA at 25°C.
+
+This is a starting circuit for a **powered prototype**, not a fully qualified
+Eurorack input. Verify thresholds, clamp voltages and clean edges over the
+intended input-voltage and temperature range. The upper clamp injects current
+into the +5 V rail: the powered circuit must absorb that current without raising
+the rail, and an external clock can partially power the module when it is off.
+Powered-off patch protection needs additional circuitry. This analog front end
+is separate from the sketch.
 
 Supply the Nano, registers and buffers from a regulated +5 V rail with common
 signal ground. A Eurorack +12 V rail must be regulated for these logic parts;
