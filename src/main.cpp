@@ -9,7 +9,7 @@
 #include "RhythmEngine.h"
 
 #if !defined(__AVR_ATmega328P__) || F_CPU != 16000000UL
-#error "MiRitmo requires a classic 16 MHz ATmega328P Nano."
+#error "Gateometry requires a classic 16 MHz ATmega328P Nano."
 #endif
 
 namespace {

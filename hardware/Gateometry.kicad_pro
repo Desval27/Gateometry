@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "MiRitmo.kicad_pro",
+    "filename": "Gateometry.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -656,12 +656,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "MiRitmo.kicad_sch",
+        "filename": "Gateometry.kicad_sch",
         "name": "Root",
         "uuid": "c201193f-0421-4722-9410-77613fa17460"
       }
     ],
-    "used_designators": "U1-2,R1-2,ENC1,#PWR1-15,D1,C1-4,A1,J1",
+    "used_designators": "RN1-3,SW1-9,U1-5,JP1,R1-22,ENC1,#PWR1-38,D1-10,C1-4,A1,J1-10",
     "variants": []
   },
   "sheets": [

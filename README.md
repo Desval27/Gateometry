@@ -1,4 +1,4 @@
-# MiRitmo
+# Gateometry
 
 Eight-channel Euclidean rhythm generator for a **classic Arduino Nano, ATmega328P,
 16 MHz / 5 V**, using a **128×64 SSD1306 I2C OLED** and Adafruit GFX. This does not
@@ -238,8 +238,8 @@ Run the portable tests on a host with GCC:
 ```sh
 g++ -std=c++11 -Wall -Wextra -Werror -pedantic \
     -fsanitize=address,undefined -Iinclude test/test_engine.cpp \
-    -o /tmp/miritmo-test
-/tmp/miritmo-test
+    -o /tmp/gateometry-test
+/tmp/gateometry-test
 ```
 
 The tests check every supported N/K/rotation combination, equal-spacing gaps,

@@ -2,8 +2,8 @@ Portable engine tests (no board required):
 
   g++ -std=c++11 -Wall -Wextra -Werror -pedantic \
       -fsanitize=address,undefined -Iinclude test/test_engine.cpp \
-      -o /tmp/miritmo-test
-  /tmp/miritmo-test
+      -o /tmp/gateometry-test
+  /tmp/gateometry-test
 
 Run from the project root. These standalone tests use standard assert rather
 than the PlatformIO device test runner. See ../README.md for hardware checks.
