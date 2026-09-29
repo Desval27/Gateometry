@@ -4945,6 +4945,175 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "IMNOTWOPR:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "IMNOTWOPR:PanelConnector_1x03"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin no_connect line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(hide yes)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:Jumper_3_Bridged12"
 			(pin_names
 				(offset 0)
@@ -5780,6 +5949,129 @@
 						)
 					)
 					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6698,6 +6990,12 @@
 		(uuid "6511182d-0e4c-49c0-817a-2bb29e587612")
 	)
 	(junction
+		(at 181.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6abf35e2-313d-479b-8867-0335ca21869e")
+	)
+	(junction
 		(at 246.38 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6914,6 +7212,12 @@
 		(uuid "d0249736-234b-4dbc-ac10-c9fcee8467dd")
 	)
 	(junction
+		(at 205.74 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d126f357-02a4-406b-a454-8e14a5097000")
+	)
+	(junction
 		(at 63.5 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6968,6 +7272,10 @@
 		(uuid "427a7f07-0a71-4c47-bb1c-a12bfb4ef259")
 	)
 	(no_connect
+		(at 43.18 250.19)
+		(uuid "438f627f-5dcb-4f06-a274-559ff41b75c5")
+	)
+	(no_connect
 		(at 342.9 149.86)
 		(uuid "4bdc0c7a-de3f-4756-878a-cc1388703f2d")
 	)
@@ -6996,8 +7304,16 @@
 		(uuid "6cc6379b-8f0f-48d3-a96c-19a774da5fa6")
 	)
 	(no_connect
+		(at 30.48 250.19)
+		(uuid "6ffb1223-39e0-46d5-aba7-f2c2adf54df9")
+	)
+	(no_connect
 		(at 267.97 195.58)
 		(uuid "72f00e26-2f73-472e-8d9e-4e293d1834a2")
+	)
+	(no_connect
+		(at 43.18 240.03)
+		(uuid "7366dd9d-fa7a-49f1-8bd9-ba6bd7df2ae4")
 	)
 	(no_connect
 		(at 207.01 73.66)
@@ -7082,6 +7398,10 @@
 	(no_connect
 		(at 287.02 212.09)
 		(uuid "dd48e90d-f332-4742-abdd-e2ddcfda2938")
+	)
+	(no_connect
+		(at 30.48 240.03)
+		(uuid "eeee2867-b32f-48ef-a0d3-f302e01f9938")
 	)
 	(no_connect
 		(at 111.76 88.9)
@@ -7765,16 +8085,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 250.19) (xy 43.18 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "360508af-8073-43b7-837e-3c57954a4e17")
-	)
-	(wire
-		(pts
 			(xy 207.01 55.88) (xy 246.38 55.88)
 		)
 		(stroke
@@ -7962,16 +8272,6 @@
 			(type default)
 		)
 		(uuid "455eb516-2c6e-4bcf-ac62-bce6064d4424")
-	)
-	(wire
-		(pts
-			(xy 30.48 240.03) (xy 43.18 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45ff4478-cc97-48e2-9a5b-1ac8849a30a9")
 	)
 	(wire
 		(pts
@@ -8332,6 +8632,16 @@
 			(type default)
 		)
 		(uuid "664947bb-8b7d-4d1b-a4ce-6f48b99b1484")
+	)
+	(wire
+		(pts
+			(xy 181.61 254) (xy 205.74 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682c6f1c-93f4-4ad2-9139-9ef2517b400d")
 	)
 	(wire
 		(pts
@@ -9445,6 +9755,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 254) (xy 181.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d10c88-8870-4b28-b7e8-9b94e0a25032")
+	)
+	(wire
+		(pts
 			(xy 349.25 82.55) (xy 349.25 83.82)
 		)
 		(stroke
@@ -10463,7 +10783,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 185.42 0)
 		(unit 1)
 		(body_style 1)
@@ -10484,15 +10804,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 6"
-			(at 150.876 185.166 0)
+		(property "Value" "MUTE6"
+			(at 150.876 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -10507,7 +10827,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 185.42 0)
+			(at 144.78 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10517,7 +10837,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -10533,6 +10853,9 @@
 		)
 		(pin "2"
 			(uuid "e02bf4c3-b10c-407e-b5d8-9b8519daf8b0")
+		)
+		(pin "3"
+			(uuid "b59ae401-9ce7-43ff-96c9-98044ada9132")
 		)
 		(instances
 			(project "Gateometry"
@@ -11254,7 +11577,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -11275,15 +11598,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 2"
-			(at 150.876 175.006 0)
+		(property "Value" "MUTE2"
+			(at 150.876 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -11298,7 +11621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 175.26 0)
+			(at 144.78 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11308,7 +11631,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11324,6 +11647,9 @@
 		)
 		(pin "2"
 			(uuid "a270153d-d0bc-414f-9937-5f9cb2555ad6")
+		)
+		(pin "3"
+			(uuid "7b3c9423-518d-40b2-bbb8-319054067978")
 		)
 		(instances
 			(project "Gateometry"
@@ -12062,7 +12388,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 182.88 0)
 		(unit 1)
 		(body_style 1)
@@ -12083,15 +12409,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 5"
-			(at 150.876 182.626 0)
+		(property "Value" "MUTE5"
+			(at 150.876 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -12106,7 +12432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 182.88 0)
+			(at 144.78 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12116,7 +12442,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -12132,6 +12458,9 @@
 		)
 		(pin "2"
 			(uuid "1c70ca9b-7e1f-4786-84e2-9d0c1524f2b5")
+		)
+		(pin "3"
+			(uuid "642a40d3-9369-40eb-b2d1-e9b0e93aa6e4")
 		)
 		(instances
 			(project "Gateometry"
@@ -12455,7 +12784,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 187.96 0)
 		(unit 1)
 		(body_style 1)
@@ -12476,15 +12805,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 7"
-			(at 150.876 187.706 0)
+		(property "Value" "MUTE7"
+			(at 150.876 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -12499,7 +12828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 187.96 0)
+			(at 144.78 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12509,7 +12838,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -12525,6 +12854,9 @@
 		)
 		(pin "2"
 			(uuid "58b141d4-63fe-405d-ac8a-2db0ab62281f")
+		)
+		(pin "3"
+			(uuid "49bd02a8-a005-4729-a10e-507a35ee394d")
 		)
 		(instances
 			(project "Gateometry"
@@ -14515,7 +14847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 190.5 0)
 		(unit 1)
 		(body_style 1)
@@ -14536,15 +14868,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 8"
-			(at 150.876 190.246 0)
+		(property "Value" "MUTE8"
+			(at 150.876 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -14559,7 +14891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 190.5 0)
+			(at 144.78 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14569,7 +14901,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -14585,6 +14917,9 @@
 		)
 		(pin "2"
 			(uuid "a6c3939d-3448-4a51-970f-e12e0b15aa22")
+		)
+		(pin "3"
+			(uuid "c36de97f-9c0e-41b6-a0ca-ebbee3c1db51")
 		)
 		(instances
 			(project "Gateometry"
@@ -14980,6 +15315,85 @@
 			(project "Gateometry"
 				(path "/c201193f-0421-4722-9410-77613fa17460"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 205.74 256.54 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dce1d1b-8a56-4f43-95c6-0f5bb3d671b0")
+		(property "Reference" "H4"
+			(at 208.28 256.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 208.28 259.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 205.74 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 205.74 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "112791c5-876d-4ef2-90b2-e6c011138f5d")
+		)
+		(instances
+			(project "Gateometry"
+				(path "/c201193f-0421-4722-9410-77613fa17460"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -15944,7 +16358,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 172.72 0)
 		(unit 1)
 		(body_style 1)
@@ -15965,15 +16379,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 1"
-			(at 150.876 172.466 0)
+		(property "Value" "MUTE1"
+			(at 150.876 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -15988,7 +16402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 172.72 0)
+			(at 144.78 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15998,7 +16412,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -16014,6 +16428,9 @@
 		)
 		(pin "2"
 			(uuid "e4c980dc-0e8c-4b61-80cb-dfa4acb8acbf")
+		)
+		(pin "3"
+			(uuid "a51ee421-a970-4077-8ebf-2cb622bc0a0f")
 		)
 		(instances
 			(project "Gateometry"
@@ -16708,6 +17125,85 @@
 			(project "Gateometry"
 				(path "/c201193f-0421-4722-9410-77613fa17460"
 					(reference "RN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 205.74 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98f7f37d-e42d-463f-888e-fe6092f8e781")
+		(property "Reference" "H2"
+			(at 208.28 248.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 208.28 251.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 205.74 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 205.74 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73491cbb-d61a-4728-a019-245d6d830d5f")
+		)
+		(instances
+			(project "Gateometry"
+				(path "/c201193f-0421-4722-9410-77613fa17460"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -18473,6 +18969,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 181.61 256.54 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd6a84c7-b668-4ea2-9168-8428743b8574")
+		(property "Reference" "H3"
+			(at 184.15 256.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 184.15 259.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 181.61 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 181.61 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcd1d3d8-7592-4f06-9c35-4f9adbe8db5a")
+		)
+		(instances
+			(project "Gateometry"
+				(path "/c201193f-0421-4722-9410-77613fa17460"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 184.15 119.38 0)
 		(unit 1)
@@ -18707,7 +19282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 177.8 0)
 		(unit 1)
 		(body_style 1)
@@ -18728,15 +19303,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 3"
-			(at 150.876 177.546 0)
+		(property "Value" "MUTE3"
+			(at 150.876 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -18751,7 +19326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 177.8 0)
+			(at 144.78 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18761,7 +19336,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -18777,6 +19352,9 @@
 		)
 		(pin "2"
 			(uuid "bf328194-9624-4d0e-9f7e-dc4d889cc9b8")
+		)
+		(pin "3"
+			(uuid "80623661-31d6-4f64-ae46-f9b291a32fac")
 		)
 		(instances
 			(project "Gateometry"
@@ -20258,6 +20836,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 181.61 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd643c66-e8f0-4c67-8722-57f36696d767")
+		(property "Reference" "H1"
+			(at 184.15 248.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 184.15 251.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 181.61 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 181.61 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a80cac7a-b69f-4269-ad4b-bbcfa7f5ec7a")
+		)
+		(instances
+			(project "Gateometry"
+				(path "/c201193f-0421-4722-9410-77613fa17460"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 255.27 143.51 0)
 		(unit 1)
@@ -20749,7 +21406,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
+		(lib_id "IMNOTWOPR:SW_SPST")
 		(at 144.78 180.34 0)
 		(unit 1)
 		(body_style 1)
@@ -20770,15 +21427,15 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "MUTE 4"
-			(at 150.876 180.086 0)
+		(property "Value" "MUTE4"
+			(at 150.876 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Desval27:2MS1T1B1M2QES"
@@ -20793,7 +21450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 180.34 0)
+			(at 144.78 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20803,7 +21460,7 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
+		(property "Description" "Switch, single pole double throw"
 			(at 144.78 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -20819,6 +21476,9 @@
 		)
 		(pin "2"
 			(uuid "d99a224d-3e75-4281-b7cf-576e679545fa")
+		)
+		(pin "3"
+			(uuid "28dba8c9-1a8b-4479-8d22-29eea19503b2")
 		)
 		(instances
 			(project "Gateometry"
