@@ -97,7 +97,7 @@
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -133,12 +133,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_not_centered_on_via": "ignore",
+        "track_not_centered_on_via": "warning",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
+        "tuning_profile_track_geometries": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -746,7 +746,7 @@
         "uuid": "c201193f-0421-4722-9410-77613fa17460"
       }
     ],
-    "used_designators": "H1-4,#FLG1-3,RN1-3,SW1-9,U1-6,JP1,R1-24,ENC1,#PWR1-46,D1-12,C1-7,A1,J1-11",
+    "used_designators": "H1-4,SW1-9,JP1,#FLG1-3,R1-24,RN1-3,U1-6,ENC1,#PWR1-46,D1-12,C1-7,A1,J1-11",
     "variants": []
   },
   "sheets": [

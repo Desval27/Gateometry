@@ -9,7 +9,7 @@ target the Nano Every, Nano ESP32, or a SH1106 display.
 ## Resources
 
 - [PCB](hardware/README.md)
-- Panel coming soon.
+- [Panel](panel/README.md)
 
 ## Build and upload
 
