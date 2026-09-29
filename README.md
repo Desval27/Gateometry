@@ -6,6 +6,11 @@ Eight-channel Euclidean rhythm generator for a **classic Arduino Nano, ATmega328
 16 MHz / 5 V**, using a **128×64 SSD1306 I2C OLED** and Adafruit GFX. This does not
 target the Nano Every, Nano ESP32, or a SH1106 display.
 
+## Resources
+
+- [PCB](hardware/README.md)
+- Panel coming soon.
+
 ## Build and upload
 
 ```sh
