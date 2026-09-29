@@ -8,6 +8,8 @@ target the Nano Every, Nano ESP32, or a SH1106 display.
 
 ## Resources
 
+!Untested!
+
 - [PCB](hardware/README.md)
 - [Panel](panel/README.md)
 
